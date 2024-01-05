@@ -1,0 +1,11 @@
+
+X	java:S125,"<This block of commented-out lines of code should be removed.(©°åğ8‚Ú‘¦Í1
+W	java:S1250"<This block of commented-out lines of code should be removed.(µ±«38‰ßá¥Í1
+
+java:S1128"bRemove this unused import 'hu.gyarmati.securitydemowithangular.filter.CustomAuthenticationFilter'.(³õû²8ŠÚ‘¦Í1
+p
+java:S1128"TRemove this unused import 'hu.gyarmati.securitydemowithangular.service.UserService'.(¼âÅ8˜ßá¥Í1
+`
+java:S1128"DRemove this unused import 'org.springframework.http.HttpMethod.GET'.(••È 8˜ßá¥Í1
+g
+java:S1128"ERemove this unused import 'org.springframework.http.HttpMethod.POST'.(ÛÈ—šùÿÿÿÿ8˜ßá¥Í1

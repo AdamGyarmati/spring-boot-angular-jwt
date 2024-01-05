@@ -1,0 +1,8 @@
+
+b	java:S112g"FDefine and throw a dedicated exception instead of using a generic one.(Ù¿£ß8 ¸à¨Í1
+S
+java:S6437M"6Revoke and change this password, as it is compromised.(£…ÓÔ8È¹à¨Í1
+a
+java:S1128"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8Ëºà¨Í1
+l
+java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€8Ìºà¨Í1
