@@ -63,3 +63,15 @@ n
 ksecurity-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/controller/UserController.java,d/7/d765cbfba2391d7680e541f3641934242ab6d6cd
 —
 gsecurity-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/config/MethodSecurity.java,8/0/80d03de5c952db6d356930aeccd971b918e0376c
+£
+ssecurity-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/exceptionhandling/ValidationError.java,4/4/44b68a70b968e4f0369b3e166c5b4bc680659580
+·
+†security-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/exceptionhandling/UsernameAlreadyInDatabaseException.java,4/5/45c3f4757799f50521c17d0ad9c6ec640ed18b77
+ª
+zsecurity-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/exceptionhandling/GlobalExceptionHandler.java,8/0/80f85f30b7c81c2eff99f893580397722435f553
+™
+isecurity-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/dto/RefreshTokenRequest.java,1/0/10ed9e7a0568207f354e51a4d6593c40fbeb315e
+š
+jsecurity-demo-with-angular/src/main/java/hu/gyarmati/securitydemowithangular/dto/RefreshTokenResponse.java,b/2/b2c4abc123e6c7502414cc53a47b78881810daea
+i
+9angular-security-jwt/src/interceptors/auth.interceptor.ts,0/1/015f2b9b5171c9b46f90b632749e438546567c67

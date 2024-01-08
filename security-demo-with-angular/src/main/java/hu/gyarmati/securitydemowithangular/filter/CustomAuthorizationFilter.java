@@ -33,7 +33,9 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         // ELőször azt nézzük meg hogy a login path-re jött-e a kérés, ha igen akkor nem csinálunk semmit
-        if (request.getServletPath().equals("/api/users/login") || request.getServletPath().equals("/api/users/token/refresh")) {
+        if (request.getServletPath().equals("/api/users/login")
+                || request.getServletPath().equals("/api/users/token/refresh")
+                || request.getServletPath().equals("/api/users/register")) {
             filterChain.doFilter(request, response);
         } else {
             String authorizationHeader = request.getHeader(AUTHORIZATION);
@@ -61,13 +63,17 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
                     filterChain.doFilter(request, response);
                 } catch (Exception ex) {
                     log.error("Error logging in: {}", ex.getMessage());
-                    response.setHeader("error", ex.getMessage());
-//                    response.sendError(HttpServletResponse.SC_FORBIDDEN);
-                    Map<String, String> error = new HashMap<>();
-                    error.put("error_message", ex.getMessage());
-                    response.setContentType(APPLICATION_JSON_VALUE);
+//                    response.setHeader("error", ex.getMessage());
+////                    response.sendError(HttpServletResponse.SC_FORBIDDEN);
+//                    Map<String, String> error = new HashMap<>();
+//                    error.put("error_message", ex.getMessage());
+//                    response.setContentType(APPLICATION_JSON_VALUE);
+//                    response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+//                    response.setStatus(403);
+//                    new ObjectMapper().writeValue(response.getOutputStream(), error);
+
                     response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-                    new ObjectMapper().writeValue(response.getOutputStream(), error);
+                    filterChain.doFilter(request, response);
                 }
             } else {
                 filterChain.doFilter(request, response);

@@ -66,7 +66,12 @@ public class UserService implements UserDetailsService {
     }
 
     public void register(UserRegisterCommand command) {
-        CustomUser customUserTest = findByUsername(command.getUsername());
+        CustomUser customUserTest = null;
+        try {
+            customUserTest = findByUsername(command.getUsername());
+        } catch (UsernameNotFoundException e) {
+
+        }
 
         if (customUserTest != null) {
             throw new UsernameAlreadyInDatabaseException(command.getUsername());
@@ -137,7 +142,7 @@ public class UserService implements UserDetailsService {
                 .withSubject(user.getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis() + 60 * 1000))
                 .withIssuer("http://localhost:8080/api/users/token/refresh")
-                .withClaim("roles", user.getRoles().stream().map(UserRole::getRole).collect(Collectors.toList()))
+                .withClaim("roles", user.getRoles().stream().map(Enum::toString).collect(Collectors.toList()))
                 .sign(algorithm);
 
         return new RefreshTokenResponse(accessToken);
