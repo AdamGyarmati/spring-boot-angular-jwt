@@ -11,4 +11,4 @@ WORKDIR /app
 RUN ./mvnw clean package
 
 # Indítsd el az alkalmazást
-CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/security-demo-with-angular-0.0.1-SNAPSHOT.jar"]
