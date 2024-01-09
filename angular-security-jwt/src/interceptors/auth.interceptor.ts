@@ -21,13 +21,13 @@ export class AuthInterceptor implements HttpInterceptor {
 
       return next.handle(newRequest).pipe(
         catchError(err  => {
-          // if(err.status === 401){
+          if(err.status === 403){
             return this.handleRefresh(newRequest, next)
-          // } else {
-          //   return throwError(()=> {
-          //     new Error('Oups')
-          //   })
-          // }
+          } else {
+            return throwError(()=> {
+              new Error('Oups')
+            })
+          }
         })
       )
     }
@@ -41,7 +41,6 @@ export class AuthInterceptor implements HttpInterceptor {
         const newRequest = req.clone({
           headers: req.headers.set('Authorization', `Bearer ${tokenData.accessToken}`)
         })
-
         return next.handle(newRequest)
       })
     )

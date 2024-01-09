@@ -40,7 +40,7 @@ export class AuthenticationService {
       })
       .pipe(
         tap((tokenData) => {
-          if (tokenData && tokenData.accessToken) {
+          if (tokenData.accessToken) {
             localStorage.setItem('accessToken', tokenData.accessToken);
           }
         })
@@ -69,7 +69,6 @@ export class AuthenticationService {
         this._userObject.next(user.user);
       }),
       catchError((err) => {
-        console.log(err);
         return throwError(() => new Error('?'))
       })
     );
