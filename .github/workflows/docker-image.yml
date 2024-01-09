@@ -21,4 +21,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t cicd-pipeline security-demo-with-angular/
     - name: Push to Dockerhub
-      run: docker push gyarmatiadam/cicd-pipeline:latest
+      run: docker push adamgyarmati/cicd-pipeline:latest
