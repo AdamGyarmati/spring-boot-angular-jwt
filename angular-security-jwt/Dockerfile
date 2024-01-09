@@ -6,3 +6,4 @@ RUN npm run build --prod
 
 FROM nginx:alpine
 COPY --from=node /app/dist/angular-security-jwt /usr/share/nginx/html
+EXPOSE 80
