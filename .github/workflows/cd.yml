@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Pull docker image
-        run: sudo docker pull docker pull gyarmatiadam/cicd-pipeline:latest
+        run: sudo docker pull gyarmatiadam/cicd-pipeline:latest
       - name: Delete old docker container
         run: sudo docker rm -f cicd-pipeline-container || true
       - name: Run docker container
