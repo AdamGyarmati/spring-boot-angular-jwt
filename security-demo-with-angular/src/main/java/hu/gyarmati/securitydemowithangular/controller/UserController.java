@@ -74,7 +74,7 @@ public class UserController {
         return new ResponseEntity<>(tokenResponse, HttpStatus.OK);
     }
 
-    @GetMapping("/hello")
+    @GetMapping
     public ResponseEntity<String> hello() {
         return new ResponseEntity<>("Hello", HttpStatus.OK);
     }
