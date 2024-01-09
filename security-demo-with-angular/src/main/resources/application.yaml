@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mariadb://127.0.0.1:3306/security-jwt-demo-with-angular?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true
+    url: jdbc:mariadb://test-db.c2fnkphxhrqy.eu-central-1.rds.amazonaws.com:3306/security-jwt-demo-with-angular?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true
     username: root
     password: test1234
   jpa:
