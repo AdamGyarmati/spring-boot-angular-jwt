@@ -73,4 +73,9 @@ public class UserController {
         RefreshTokenResponse tokenResponse = userService.refreshToken(refreshTokenRequest);
         return new ResponseEntity<>(tokenResponse, HttpStatus.OK);
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> hello() {
+        return new ResponseEntity<>("Hello", HttpStatus.OK);
+    }
 }
