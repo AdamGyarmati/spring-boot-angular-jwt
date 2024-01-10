@@ -13,20 +13,18 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Delete old docker container
+      - name: Delete old backend docker container
         run: sudo docker rm -f cicd-pipeline-backend-container || true
-      - name: Delete backend docker image
-        run: sudo docker image rm gyarmatiadam/cicd-pipeline-backend -f || true
+      - name: Delete old frontend docker container
+        run: sudo docker rm -f cicd-pipeline-frontend-container || true
+      - name: Delete all docker image
+        run: sudo docker rmi -f $(docker images -aq) || true
+
       - name: Pull backend docker image
         run: sudo docker pull gyarmatiadam/cicd-pipeline-backend:latest
-
       - name: Run docker container
         run: sudo docker run -d -p 8080:8080 --name cicd-pipeline-backend-container gyarmatiadam/cicd-pipeline-backend
 
-      - name: Delete old docker container
-        run: sudo docker rm -f cicd-pipeline-frontend-container || true
-      - name: Delete frontend docker image
-        run: sudo docker image rm gyarmatiadam/cicd-pipeline-frontend -f || true
       - name: Pull frontend docker image
         run: sudo docker pull gyarmatiadam/cicd-pipeline-frontend:latest
       - name: Run docker container
