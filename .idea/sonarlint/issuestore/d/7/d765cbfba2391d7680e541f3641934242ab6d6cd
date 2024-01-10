@@ -1,35 +1,35 @@
 
 
-java:S1130H"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(©Ûƒ©ûÿÿÿÿ8üµÍÈÍ1
+java:S1130H"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(©Ûƒ©ûÿÿÿÿ8¦Ø³òÎ1
 K
-java:S1128".Remove this unused import 'com.auth0.jwt.JWT'.(å©ğ›8ıµÍÈÍ1
+java:S1128".Remove this unused import 'com.auth0.jwt.JWT'.(å©ğ›8«Ø³òÎ1
 S
-java:S1128"6Remove this unused import 'com.auth0.jwt.JWTVerifier'.(ã¯¶ã8ıµÍÈÍ1
+java:S1128"6Remove this unused import 'com.auth0.jwt.JWTVerifier'.(ã¯¶ã8«Ø³òÎ1
 \
-java:S1128"?Remove this unused import 'com.auth0.jwt.algorithms.Algorithm'.(ÒãšÂ8ıµÍÈÍ1
+java:S1128"?Remove this unused import 'com.auth0.jwt.algorithms.Algorithm'.(ÒãšÂ8¬Ø³òÎ1
 ]
-java:S1128"@Remove this unused import 'com.auth0.jwt.interfaces.DecodedJWT'.(éÀ¼”8ıµÍÈÍ1
+java:S1128"@Remove this unused import 'com.auth0.jwt.interfaces.DecodedJWT'.(éÀ¼”8¬Ø³òÎ1
 e
-java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8ıµÍÈÍ1
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8¬Ø³òÎ1
 r
-java:S1128"PRemove this unused import 'hu.gyarmati.securitydemowithangular.config.UserRole'.( Äñıÿÿÿÿ8ıµÍÈÍ1
+java:S1128"PRemove this unused import 'hu.gyarmati.securitydemowithangular.config.UserRole'.( Äñıÿÿÿÿ8­Ø³òÎ1
 t
-java:S1128	"RRemove this unused import 'hu.gyarmati.securitydemowithangular.domain.CustomUser'.(Æ•óêøÿÿÿÿ8ıµÍÈÍ1
+java:S1128	"RRemove this unused import 'hu.gyarmati.securitydemowithangular.domain.CustomUser'.(Æ•óêøÿÿÿÿ8­Ø³òÎ1
 a
-java:S1128"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8ıµÍÈÍ1
+java:S1128"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8®Ø³òÎ1
 l
-java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€8ıµÍÈÍ1
+java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€8®Ø³òÎ1
 `
-java:S1128"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8ıµÍÈÍ1
+java:S1128"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8®Ø³òÎ1
 H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8ıµÍÈÍ1
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8®Ø³òÎ1
 P
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ıµÍÈÍ1
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8®Ø³òÎ1
 L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8şµÍÈÍ1
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8¯Ø³òÎ1
 Z
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8şµÍÈÍ1
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8¯Ø³òÎ1
 l
-java:S1128"ORemove this unused import 'org.springframework.http.HttpHeaders.AUTHORIZATION'.(ê…ÊÂ8şµÍÈÍ1
+java:S1128"ORemove this unused import 'org.springframework.http.HttpHeaders.AUTHORIZATION'.(ê…ÊÂ8°Ø³òÎ1
 s
-java:S1128 "VRemove this unused import 'org.springframework.http.MediaType.APPLICATION_JSON_VALUE'.(òÎÃã8şµÍÈÍ1
+java:S1128 "VRemove this unused import 'org.springframework.http.MediaType.APPLICATION_JSON_VALUE'.(òÎÃã8±Ø³òÎ1
