@@ -6,7 +6,7 @@ RUN npm run build --prod
 
 FROM nginx:latest
 COPY --from=node /app/dist/angular-security-jwt /usr/share/nginx/html
-EXPOSE 4200
+EXPOSE 80
 
 #COPY --from=build /app/dist/angular-security-jwt /usr/share/nginx/html
 #COPY /nginx.conf  /etc/nginx/conf.d/default.conf
