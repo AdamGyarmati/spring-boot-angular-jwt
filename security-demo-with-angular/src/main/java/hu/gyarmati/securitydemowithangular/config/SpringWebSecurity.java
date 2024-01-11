@@ -29,7 +29,7 @@ public class SpringWebSecurity implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("172.18.0.3:80", "http://172.18.0.3:80")
+                .allowedOrigins("http://ec2-3-72-88-184.eu-central-1.compute.amazonaws.com:80")
                 .allowedMethods("GET", "POST", "DELETE", "PUT", "OPTIONS")
                 .allowedHeaders("*");
     }
