@@ -32,7 +32,7 @@ import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-//@RequestMapping("/api/users")
+@RequestMapping("/api/users")
 public class UserController {
     private final UserService userService;
 
