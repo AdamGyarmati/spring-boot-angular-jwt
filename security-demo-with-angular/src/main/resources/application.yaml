@@ -1,3 +1,10 @@
+server:
+  port: 9000
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
 spring:
   datasource:
     url: jdbc:mariadb://test-db.c2fnkphxhrqy.eu-central-1.rds.amazonaws.com:3306/security-jwt-demo-with-angular?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true
@@ -10,9 +17,3 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: on
-server:
-  servlet:
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
