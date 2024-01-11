@@ -76,7 +76,6 @@ public class UserController {
 
     @GetMapping
     public ResponseEntity<String> hello() {
-
         return new ResponseEntity<>("Hello", HttpStatus.OK);
     }
 }
