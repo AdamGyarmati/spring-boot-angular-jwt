@@ -9,8 +9,8 @@ import {AuthResponse} from "../models/authResponse.model";
   providedIn: 'root',
 })
 export class AuthenticationService {
-  // BASE_URL = 'http://localhost:8080/api/users/';
-  BASE_URL = 'http://172.18.0.2:8080/api/users/';
+  BASE_URL = 'http://localhost:8080/api/users/';
+  // BASE_URL = 'http://172.18.0.2:8080/api/users/';
 
   private _userObject = new BehaviorSubject<User | null>(null);
 
