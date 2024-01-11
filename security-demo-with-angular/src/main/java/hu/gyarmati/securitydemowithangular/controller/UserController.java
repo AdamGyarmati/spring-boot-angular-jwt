@@ -49,7 +49,6 @@ public class UserController {
 
     @GetMapping("/getMe")
     @Secured({"ROLE_USER", "ROLE_ADMIN"})
-    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<CustomUserDetails> getMe() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         UserDetails loggedInUser = (UserDetails) authentication.getPrincipal();
