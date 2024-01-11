@@ -22,10 +22,10 @@ jobs:
 
       - name: Pull backend docker image
         run: sudo docker pull gyarmatiadam/cicd-pipeline-backend:latest
-      - name: Run docker container
+      - name: Run backend docker container
         run: sudo docker run -d -p 8080:8080 --name cicd-pipeline-backend-container gyarmatiadam/cicd-pipeline-backend
 
       - name: Pull frontend docker image
         run: sudo docker pull gyarmatiadam/cicd-pipeline-frontend:latest
-      - name: Run docker container
+      - name: Run frontend docker container
         run: sudo docker run -d -p 80:80 --name cicd-pipeline-frontend-container gyarmatiadam/cicd-pipeline-frontend
